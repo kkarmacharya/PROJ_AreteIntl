@@ -726,6 +726,16 @@ ion-icon {
   .middle-menu a {
     display: none;
   }
+  .compare-modal h3,
+  .compare-modal h4 {
+    font-size: 18px;
+  }
+  .compare-modal b {
+    font-size: 12px;
+  }
+  .compare-modal span {
+    font-size: 16px;
+  }
 }
 .compare-modal .table thead,
 table thead {
