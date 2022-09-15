@@ -117,6 +117,16 @@ hr.dotted {
   background-color: #222;
   color: #fff !important;
 }
+.home-page .btn.btn-bg-dark {
+  background-color: rgba(100, 100, 100, 0.8);
+  box-shadow: 32px 32px 100px rgb(51 177 223 / 5%);
+  backdrop-filter: blur(21.7463px);
+  border: none;
+}
+.home-page .btn.btn-bg-white {
+  border: none;
+  letter-spacing: 0;
+}
 .btn.btn-white:hover {
   color: #222;
 }
