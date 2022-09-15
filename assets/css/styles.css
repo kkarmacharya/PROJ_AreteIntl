@@ -774,7 +774,7 @@ textarea.form-control {
 }
 .onepage-pagination {
   position: fixed;
-  right: 15px;
+  left: 15px;
   top: 50%;
   z-index: 5;
   list-style: none;
