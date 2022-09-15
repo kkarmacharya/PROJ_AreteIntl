@@ -409,6 +409,7 @@ ion-icon {
   background: rgba(100, 100, 100, 0.5);
   box-shadow: 32px 32px 100px rgba(51, 177, 223, 0.05);
   backdrop-filter: blur(21.7463px);
+  -webkit-backdrop-filter: blur(21.7463px);
 }
 .nav-contents {
   margin: 0 3rem;
@@ -643,11 +644,11 @@ ion-icon {
   z-index: 110;
   background: rgba(100, 100, 100, 0.5);
   box-shadow: 32px 32px 100px rgb(51 177 223 / 5%);
+  backdrop-filter: blur(21.7463px);
   -webkit-backdrop-filter: blur(21.7463px);
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   display: -ms-flexbox;
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   -o-transform: translateX(100%);
@@ -746,6 +747,7 @@ table thead {
   background: rgba(100, 100, 100, 0.5);
   box-shadow: 32px 32px 100px rgb(51 177 223 / 5%);
   backdrop-filter: blur(21.7463px);
+  -webkit-backdrop-filter: blur(21.7463px);
 }
 .compare-modal .modal-dialog .modal-content .compare-content {
   margin: 20px 0 20px 20px;
@@ -860,12 +862,14 @@ table thead {
   background: rgba(0, 0, 0, 0.5);
   box-shadow: 32px 32px 100px rgb(51 177 223 / 5%);
   backdrop-filter: blur(21.7463px);
+  -webkit-backdrop-filter: blur(21.7463px);
   color: #ffffff;
 }
 .cta-2 button {
   background: rgba(190, 190, 190, 0.5);
   box-shadow: 32px 32px 100px rgb(51 177 223 / 5%);
   backdrop-filter: blur(21.7463px);
+  -webkit-backdrop-filter: blur(21.7463px);
   color: #000000;
 }
 @media (max-width: 991px) {
