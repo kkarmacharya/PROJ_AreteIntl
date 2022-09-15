@@ -400,7 +400,7 @@ ion-icon {
   color: #d0343e !important;
 }
 .navbar {
-  position: absolute;
+  position: fixed;
   z-index: 10;
   width: 100%;
   padding: 0;
@@ -718,6 +718,7 @@ ion-icon {
 .middle-menu {
   text-align: center;
 }
+
 @media screen and (max-width: 768px) {
   .compare-modal .modal-dialog {
     max-width: 98%;
