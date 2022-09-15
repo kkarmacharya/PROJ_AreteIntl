@@ -484,6 +484,7 @@ ion-icon {
 }
 .navbar ul {
   margin-bottom: 0;
+  width: 100%;
 }
 .navbar-desctop .phone,
 .navbar-desctop .email {
@@ -1441,4 +1442,8 @@ h1 + .line {
   .model-video-section {
     height: 30vh;
   }
+}
+#presentation .section .container .row img {
+  width: 100px;
+  float: left;
 }

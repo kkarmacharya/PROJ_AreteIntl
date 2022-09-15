@@ -764,7 +764,7 @@ textarea.form-control {
 }
 .onepage-pagination {
   position: fixed;
-  right: 75px;
+  right: 15px;
   top: 50%;
   z-index: 5;
   list-style: none;
@@ -1800,13 +1800,13 @@ table th {
   background-image: url(../images/background/bg_35.jpg);
 }
 .section-bg-34 {
-  background-image: url(../images/background/bg_36.jpg);
+  background-image: url(../img/Slider/model-3.jpeg);
 }
 .section-bg-35 {
-  background-image: url(../images/background/bg_37.jpg);
+  background-image: url(../img/Slider/Model-X.jpeg);
 }
 .section-bg-36 {
-  background-image: url(../images/background/bg_38.jpg);
+  background-image: url(../img/Slider/Model-Y.jpeg);
 }
 .section-bg-37 {
   background-image: url(../images/background/bg_39.jpg);
