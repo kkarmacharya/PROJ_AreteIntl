@@ -1481,4 +1481,13 @@ h1 + .line {
   .desktop-img {
     display: none;
   }
+  .cta-1 {
+    position: absolute;
+    bottom: 90px;
+  }
+  .cta-2 {
+    position: absolute;
+    bottom: 20px;
+    left: calc(50% - 110px);
+  }
 }
