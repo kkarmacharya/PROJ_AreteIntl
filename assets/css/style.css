@@ -5,24 +5,29 @@
   font-family: proxima-nova;
   src: url(../fonts/ProximaNovaFont.otf);
 }
+@font-face {
+  font-family: GothamBook;
+  src: url(../fonts/official/GothamBook.ttf);
+}
+@font-face {
+  font-family: GothamLight;
+  src: url(../fonts/official/GothamLight.ttf);
+}
+@font-face {
+  font-family: GothamMedium;
+  src: url(../fonts/official/GothamMedium.ttf);
+}
 html {
   -webkit-font-smoothing: antialiased;
 }
 body {
-  font-family: "proxima-nova", sans-serif;
+  font-family: "GothamBook", sans-serif;
   font-size: 1rem;
   line-height: 1.625em;
   color: #767676;
   overflow-y: scroll;
 }
-/* ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-}
-::-webkit-scrollbar-thumb {
-  cursor: pointer;
-  background: #d0343e;
-} */
+
 ::selection {
   background-color: #d0343e;
   color: #000;
@@ -38,7 +43,7 @@ body {
 h1,
 .h1 {
   position: relative;
-  font-family: "proxima-nova", sans-serif;
+  font-family: "GothamBook", sans-serif;
   font-size: 5.725rem;
   font-weight: 700;
   line-height: 1;
@@ -47,7 +52,7 @@ h1,
 h2,
 .h2 {
   position: relative;
-  font-family: "proxima-nova", sans-serif;
+  font-family: "GothamBook", sans-serif;
   font-weight: 700;
   font-size: 2.7rem;
   line-height: 1.2;
@@ -56,7 +61,7 @@ h2,
 }
 h3,
 .h3 {
-  font-family: "proxima-nova", sans-serif;
+  font-family: "GothamBook", sans-serif;
   font-weight: 700;
   font-size: 1.925rem;
   line-height: 1.25;
@@ -65,7 +70,7 @@ h3,
 }
 h4,
 .h4 {
-  font-family: "proxima-nova", sans-serif;
+  font-family: "GothamBook", sans-serif;
   font-weight: 600;
   font-size: 1.525rem;
   line-height: 1.2;
@@ -74,7 +79,7 @@ h4,
 }
 h5,
 .h5 {
-  font-family: "proxima-nova", sans-serif;
+  font-family: "GothamBook", sans-serif;
   font-weight: 600;
   font-size: 1.125rem;
   line-height: 1.2;
@@ -83,7 +88,7 @@ h5,
 }
 h6,
 .h6 {
-  font-family: "proxima-nova", sans-serif;
+  font-family: "GothamBook", sans-serif;
   font-weight: 700;
   font-size: 0.9rem;
   letter-spacing: 1px;
@@ -217,7 +222,7 @@ button:hover {
   transform: scale(0.9);
 }
 .btn {
-  font-family: "proxima-nova", sans-serif;
+  font-family: "GothamBook", sans-serif;
   position: relative;
   display: inline-block;
   border: 0.2em solid #d0343e;
@@ -405,7 +410,7 @@ ion-icon {
   width: 100%;
   padding: 0;
   /* border-bottom: 1px solid rgba(52, 52, 52, 0.1); */
-  height: 4.7rem;
+  height: 3.3rem;
   background: rgba(100, 100, 100, 0.5);
   box-shadow: 32px 32px 100px rgba(51, 177, 223, 0.05);
   backdrop-filter: blur(21.7463px);
@@ -413,7 +418,7 @@ ion-icon {
 }
 .nav-contents {
   margin: 0 3rem;
-  top: -5px;
+  /* top: -5px; */
 }
 /* @media (min-width: 992px) {
   .navbar {
@@ -456,7 +461,7 @@ ion-icon {
 }
 .navbar-brand {
   position: absolute;
-  font-family: "proxima-nova", sans-serif;
+  font-family: "GothamBook", sans-serif;
   font-size: 1.875rem;
   font-weight: 700;
   color: #fff;
@@ -470,6 +475,7 @@ ion-icon {
 }
 .navbar-brand img {
   width: 100px;
+  margin-top: 6px;
 }
 .navbar-nav .nav-link {
   font-size: 14px;
@@ -490,7 +496,7 @@ ion-icon {
 .navbar-desctop .phone,
 .navbar-desctop .email {
   float: left;
-  font-family: "proxima-nova", sans-serif;
+  font-family: "GothamBook", sans-serif;
   position: relative;
   top: 0.3rem;
   margin-right: 4rem;
@@ -509,7 +515,7 @@ ion-icon {
   }
 }
 .navbar-bottom {
-  font-family: "proxima-nova", sans-serif;
+  font-family: "GothamBook", sans-serif;
   color: #000;
 }
 .navbar-bottom .social {
@@ -718,6 +724,7 @@ ion-icon {
 }
 .middle-menu {
   text-align: center;
+  margin-top: 10px;
 }
 
 @media screen and (max-width: 768px) {
@@ -893,7 +900,7 @@ table thead {
   color: #fff;
   z-index: 9;
   display: block;
-  top: 20%;
+  top: 15%;
   left: calc(48%-100px);
   left: calc(50% - 60px);
 }
@@ -1122,7 +1129,7 @@ h1 + .line {
   display: inline-block;
   font-size: 10rem;
   line-height: 1;
-  font-family: "proxima-nova", sans-serif;
+  font-family: "GothamBook", sans-serif;
   color: #d0343e;
   font-weight: 700;
 }
@@ -1450,6 +1457,17 @@ h1 + .line {
 .model-video-section .section {
   height: 100%;
 }
+
+#presentation .section .container .row img {
+  width: 100px;
+  float: left;
+}
+.mobile-img {
+  display: none;
+}
+.desktop-img {
+  display: block;
+}
 @media screen and (max-width: 576px) {
   .specs-section .specs-img {
     display: none;
@@ -1457,8 +1475,10 @@ h1 + .line {
   .model-video-section {
     height: 30vh;
   }
-}
-#presentation .section .container .row img {
-  width: 100px;
-  float: left;
+  .mobile-img {
+    display: block;
+  }
+  .desktop-img {
+    display: none;
+  }
 }
