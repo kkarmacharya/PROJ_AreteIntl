@@ -781,15 +781,22 @@ table thead {
 }
 .main .banner h3 {
   position: absolute;
-  color: #fff;
+  color: #000;
   z-index: 9;
   display: block;
   top: 15%;
-  left: calc(48%-100px);
   left: calc(50% - 60px);
 }
+.main .banner span {
+  position: absolute;
+  color: #000;
+  z-index: 9;
+  display: block;
+  top: 22%;
+  left: calc(50% - 22px);
+}
 .banner-badges {
-  margin: -166px auto 0;
+  margin: -173px auto 0;
   width: 100%;
   background: rgba(100, 100, 100, 0.6);
   box-shadow: 32px 32px 100px rgb(51 177 223 / 5%);
@@ -1005,6 +1012,10 @@ h1 + .line {
 @media screen and (max-width: 576px) {
   .specs-section .specs-img {
     display: none;
+  }
+  #presentation .cta-1 span,
+  #presentation .cta-2 span {
+    font-size: 12px;
   }
   /* .model-video-section {
     height: 30vh;
