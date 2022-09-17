@@ -64,7 +64,7 @@ h3,
   font-family: "GothamBook", sans-serif;
   font-weight: 700;
   font-size: 1.925rem;
-  line-height: 1.25;
+  line-height: 1.6;
   color: #000;
   margin: 1.5rem 0;
 }
@@ -73,7 +73,7 @@ h4,
   font-family: "GothamBook", sans-serif;
   font-weight: 600;
   font-size: 1.525rem;
-  line-height: 1.2;
+  line-height: 1.5;
   color: #000;
   margin: 1.5rem 0;
 }
@@ -739,7 +739,7 @@ ion-icon {
     font-size: 18px;
   }
   .compare-modal b {
-    font-size: 12px;
+    font-size: 11px;
   }
   .compare-modal span {
     font-size: 16px;
@@ -1489,5 +1489,8 @@ h1 + .line {
     position: absolute;
     bottom: 20px;
     left: calc(50% - 110px);
+  }
+  .banner-badges {
+    margin: -172px auto 0;
   }
 }
