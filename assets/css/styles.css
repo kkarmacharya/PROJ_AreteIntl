@@ -1872,7 +1872,7 @@ table th {
   background-image: url(../images/background/bg_55.jpg);
 }
 .section-bg-54 {
-  background-image: url(../img/contactbg.jpg);
+  background-image: url(../img/about.jpg);
 }
 .section-bg-55 {
   background-image: url(../images/background/bg_57.jpg);
@@ -4781,7 +4781,7 @@ table.shop-cart tbody tr td.actions input {
     display: block;
   }
   #main {
-    overflow-x: hidden;
+    overflow: hidden;
   }
 }
 @media (max-width: 375px) {
