@@ -801,6 +801,7 @@ table thead {
   background: rgba(100, 100, 100, 0.6);
   box-shadow: 32px 32px 100px rgb(51 177 223 / 5%);
   backdrop-filter: blur(7.7463px);
+  -webkit-backdrop-filter: blur(7.7463px);
 }
 .dual-motor .banner-badges {
   margin: -152px auto 0 !important;
@@ -986,6 +987,7 @@ h1 + .line {
   background: rgba(100, 100, 100, 0.4);
   box-shadow: 32px 32px 100px rgb(51 177 223 / 5%);
   backdrop-filter: blur(7.7463px);
+  -webkit-backdrop-filter: blur(7.7463px);
 }
 .interior-display .interior-specs-col h4 {
   margin-bottom: 5px;
@@ -1007,7 +1009,9 @@ h1 + .line {
 .desktop-img {
   display: block;
 }
-/* carousel CSS */
+.contact-banner {
+  padding-top: 150px;
+}
 
 @media screen and (max-width: 576px) {
   .specs-section .specs-img {
