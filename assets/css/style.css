@@ -792,7 +792,7 @@ table thead {
   color: #000;
   z-index: 9;
   display: block;
-  top: 22%;
+  top: 24%;
   left: calc(50% - 22px);
 }
 .banner-badges {
