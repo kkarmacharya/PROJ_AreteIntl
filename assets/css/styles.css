@@ -28,8 +28,14 @@ textarea {
   border: transparent;
 }
 select {
-  border: 1px solid;
+  /* border: 1px solid; */
   padding: 10px 0;
+  height: 40px;
+  background: rgba(154, 154, 154, 0.1);
+  box-shadow: 0px 10px 20px rgba(42, 103, 146, 0.12),
+    inset 2px 2px 14px rgba(238, 243, 255, 0.75), inset -4px -4px 8px #dfe6f5;
+  border-radius: 10px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 .btn,
 input[type="checkbox"],
