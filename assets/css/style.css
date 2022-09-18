@@ -1026,9 +1026,19 @@ h1 + .line {
 .contact-banner {
   padding-top: 150px;
 }
-.place-for-everything-carousel .carousel-indicators {
-  bottom: 60px;
+.place-for-everything-carousel img:after {
+  content: "\A";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: all 1s;
+  -webkit-transition: all 1s;
 }
+
 @media screen and (max-width: 576px) {
   .specs-section .specs-img {
     display: none;
