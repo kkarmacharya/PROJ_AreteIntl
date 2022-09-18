@@ -809,7 +809,7 @@ table thead {
 .banner-badges {
   margin: -173px auto 0;
   width: 100%;
-  background: rgba(100, 100, 100, 0.6);
+  background: rgba(100, 100, 100, 0.4);
   box-shadow: 32px 32px 100px rgb(51 177 223 / 5%);
   backdrop-filter: blur(1px);
   -webkit-backdrop-filter: blur(1px);
