@@ -981,6 +981,9 @@ h1 + .line {
   width: 100%;
   height: auto;
 }
+.specs-section p {
+  color: #fff;
+}
 .safety-section img {
   width: 100%;
 }
