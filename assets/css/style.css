@@ -811,8 +811,8 @@ table thead {
   width: 100%;
   background: rgba(100, 100, 100, 0.6);
   box-shadow: 32px 32px 100px rgb(51 177 223 / 5%);
-  backdrop-filter: blur(7.7463px);
-  -webkit-backdrop-filter: blur(7.7463px);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
 }
 .dual-motor .banner-badges {
   margin: -152px auto 0 !important;
@@ -1061,5 +1061,9 @@ h1 + .line {
   }
   .home-page .cta-1 .btn.btn-bg-dark {
     margin-right: 0 !important;
+  }
+  .banner-badges span {
+    font-size: 12px;
+    margin-bottom: 0 !important;
   }
 }
