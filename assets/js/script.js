@@ -3,9 +3,9 @@ function preSlider() {
   $("#presentation").fullpage({
     sectionsColor: ["#fff", "#fff", "#1a237e", "#fff", "#fff"],
     anchors: [
-      "section-introduction",
-      "section-about-us",
-      "section-our-services",
+      "model-3",
+      "model-X",
+      "model-Y",
       "section-our-projects",
       "section-contact-us",
     ],

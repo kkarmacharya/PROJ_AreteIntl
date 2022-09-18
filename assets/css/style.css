@@ -19,14 +19,15 @@
 }
 html {
   -webkit-font-smoothing: antialiased;
-  /* overflow: scroll; */
+  /* overflow: hidden; */
 }
 body {
   font-family: "GothamBook", sans-serif;
   font-size: 1rem;
   line-height: 1.625em;
-  color: #767676;
+  color: #000;
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 h1,
@@ -116,7 +117,9 @@ h6 a:hover,
 }
 p {
   margin-bottom: 1rem;
+  color: #000;
 }
+
 ul {
   list-style: none;
   padding-left: 0;
@@ -767,6 +770,14 @@ table thead {
   .cta-2 button {
     margin-top: 10px;
   }
+  .d-991 {
+    display: block;
+  }
+}
+@media screen and (min-width: 992px) {
+  .d-991 {
+    display: none;
+  }
 }
 /* .main {
   background: #000000;
@@ -781,7 +792,7 @@ table thead {
 }
 .main .banner h3 {
   position: absolute;
-  color: #000;
+  color: #fff;
   z-index: 9;
   display: block;
   top: 15%;
@@ -789,7 +800,7 @@ table thead {
 }
 .main .banner span {
   position: absolute;
-  color: #000;
+  color: #fff;
   z-index: 9;
   display: block;
   top: 24%;
@@ -921,7 +932,7 @@ h1 + .line {
 }
 .banner img {
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   object-fit: cover;
 }
 .banner-1 img {
@@ -1012,7 +1023,9 @@ h1 + .line {
 .contact-banner {
   padding-top: 150px;
 }
-
+.place-for-everything-carousel .carousel-indicators {
+  bottom: 60px;
+}
 @media screen and (max-width: 576px) {
   .specs-section .specs-img {
     display: none;
