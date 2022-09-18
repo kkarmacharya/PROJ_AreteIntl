@@ -432,6 +432,9 @@ button:hover {
   color: #ffffff;
   cursor: pointer;
 }
+.navbar-bottom .power .white {
+  text-align: center;
+}
 .navbar-bottom .copy {
   text-align: center;
   position: relative;
