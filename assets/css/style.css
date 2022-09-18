@@ -1075,5 +1075,6 @@ h1 + .line {
   .banner-badges span {
     font-size: 10px;
     margin-bottom: 0 !important;
+    line-height: 1.2;
   }
 }
