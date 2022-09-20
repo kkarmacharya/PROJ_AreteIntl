@@ -1041,7 +1041,9 @@ h1 + .line {
   transition: all 1s;
   -webkit-transition: all 1s;
 }
-
+.csr-logo img {
+  max-width: 200px;
+}
 @media screen and (max-width: 576px) {
   .specs-section .specs-img {
     display: none;
