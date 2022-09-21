@@ -574,6 +574,9 @@ button:hover {
   opacity: 1;
   color: #d0343e;
 }
+.footer strong {
+  font-weight: 800;
+}
 @media (min-width: 576px) {
   .navbar-mobile {
     width: 50%;
@@ -776,10 +779,18 @@ table thead {
   .d-991 {
     display: block;
   }
+  .text-center-md {
+    text-align: center !important;
+  }
 }
 @media screen and (min-width: 992px) {
   .d-991 {
     display: none;
+  }
+}
+@media (max-width: 1200px) {
+  .text-center-lg {
+    text-align: center !important;
   }
 }
 /* .main {
