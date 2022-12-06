@@ -1055,6 +1055,9 @@ h1 + .line {
 .csr-logo img {
   max-width: 150px;
 }
+.site nav .active {
+  color: #d0343e;
+}
 @media screen and (max-width: 576px) {
   .specs-section .specs-img {
     display: none;
