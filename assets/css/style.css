@@ -1058,6 +1058,30 @@ h1 + .line {
 .site nav .active {
   color: #d0343e;
 }
+/* .about-arete .img-1 {
+  height: 500px;
+}
+.about-arete .img-1 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+} */
+.about-arete .img-2 img {
+  height: auto;
+  width: 100%;
+}
+.about-arete .ing-3 img {
+  float: right;
+  width: 100%;
+}
+.csr-logo {
+  margin-top: 75px;
+}
+@media screen and (max-width: 991px) {
+  .about-arete .img-1 {
+    display: none;
+  }
+}
 @media screen and (max-width: 576px) {
   .specs-section .specs-img {
     display: none;
