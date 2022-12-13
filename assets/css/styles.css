@@ -2590,7 +2590,8 @@ table th {
 }
 .blog-item.style-1 .media-wrapper .media img {
   height: 100%;
-  object-fit: contain;
+  width: 100%;
+  object-fit: cover;
 }
 .blog-item.style-1 .overlay-wrapper {
   box-sizing: border-box;
