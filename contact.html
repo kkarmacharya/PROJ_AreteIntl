@@ -21,6 +21,8 @@
     href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i%7CRaleway:100,200,300,400,500,600,700,800,900%7CDroid+Serif:400,400italic,700"
     rel="stylesheet" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+
 </head>
 
 <body>
@@ -116,52 +118,38 @@
                   <h2 class="section-title fz-32 mb-3">
                     <b>Submit a Message</b>
                   </h2>
-                  <form action="https://formspree.io/f/mlevjqle" method="POST">
+                  <!-- <form action="https://formspree.io/f/mlevjqle" method="POST"> -->
+                  <form method="POST">
                     <div class="row">
                       <div class="col-md-6">
                         <label for="name"> Full Name </label>
-                        <input type="text" name="Full Name" value="" ˜ size="40" class="form-control"
+                        <input type="text" name="Full Name" value="" id="fullName" size="40" class="form-control"
                           placeholder="Your full name here" required />
                       </div>
                       <div class="col-md-6">
                         <label for="email"> Email </label>
-                        <input type="email" name="Email" value="" size="40" class="form-control"
+                        <input type="email" name="Email" value="" id="email" size="40" class="form-control"
                           placeholder="Your email here" required />
                       </div>
-                      <!-- <div class="col-md-6">
-                          <label for="Topic"> Topic </label>
-                          <select name="Topic" id="" required>
-                            <option>
-                              Quotation for Tesla Model 3
-                            </option>
-                            <option>
-                              Quotation for Tesla Model X
-                            </option>
-                            <option>
-                              Quotation for Tesla Model Y
-                            </option>
-                            <option>Request for Test Drive</option>
-                          </select>
-                        </div> -->
                       <div class="col-md-6">
                         <label for=""> Contact </label>
-                        <input type="text" name="Contact Number" value="" size="40" class="form-control"
+                        <input type="text" name="Contact Number" id="contact" value="" size="40" class="form-control"
                           placeholder="Your mobile number" required />
                       </div>
                       <div class="col-md-6">
                         <label for="">Title </label>
-                        <input type="text" name="Title" value="" size="40" class="form-control"
+                        <input type="text" name="Title" value="" id="title" size="40" class="form-control"
                           placeholder="Your designation" />
                       </div>
 
                       <div class="col-md-12">
                         <label for="">Message</label>
 
-                        <textarea name="Message" cols="40" rows="3" class="form-control"
+                        <textarea name="Message" cols="40" rows="3" id="message" class="form-control"
                           placeholder="Enter message here"></textarea>
                       </div>
                       <div class="col-md-12 text-right">
-                        <button type="submit">Submit</button>
+                        <button type="button" onclick="sendEmail()">Submit</button>
                       </div>
                     </div>
                   </form>
@@ -177,22 +165,7 @@
                 <span> (+977) 980 236 6688 </span>
 
               </div>
-              <!-- <div class="">
-                  <h4>Customer Support</h4>
-                  <span> (+977) 98X XXX XXXX </span> <br />
-                  <span> (+977) 98X XXX XXXX </span>
-                </div>
-                <div class="">
-                  <h4>Spare Parts</h4>
-                  <span> (+977) 98X XXX XXXX </span> <br />
-                  <span> (+977) 98X XXX XXXX </span>
-                </div>
-                <div class="">
-                  <h4>Servicing</h4>
-                  <span> (+977) 98X XXX XXXX </span> <br />
-                  <span> (+977) 98X XXX XXXX </span>
-                </div>
-              </div> -->
+
             </div>
           </div>
         </div>
@@ -229,21 +202,6 @@
                 © Arete International (Pvt) Ltd. 2022 All Rights Reserved.
               </div>
             </div>
-
-            <!-- <div class="col-xl-4">
-              <div class="power">
-                <div class="white text-right text-center-lg">
-                  Powered by
-                  <a
-                    href="http://asterinnovations.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <strong>Aster Innovations (Pvt) Ltd.</strong>
-                  </a>
-                </div>
-              </div>
-            </div> -->
           </div>
         </div>
       </footer>
@@ -260,6 +218,28 @@
         }
       }
     </script>
+
+    <script>
+      function sendEmail() {
+
+        Email.send({
+          SecureToken: "a7dab914-2da6-4d38-9f4d-6ec8379ccc1a",
+          To: "karmacharyakshitiz@gmail.com",
+          From: "fkeepers490@gmail.com",
+          Subject: "Contact Request",
+          Body: "<table >" + "<tr>" + "<td>" + "<b>" + "Full Name : " + "</b>" + "</td" + "</td>" + document.getElementById("fullName").value + "</td>" + "</tr>" + "<tr>" + "<td>" + "<b>" + "Email : " + "</b>" + "</td" + "</td>" + document.getElementById("email").value + "</td>" + "</tr>" + "<tr>" + "<td>" + "<b>" + "Contact : " + "</b>" + "</td" + "</td>" + document.getElementById("contact").value + "</td>" + "</tr>" + "<tr>" + "<td>" + "<b>" + "Title : " + "</b>" + "</td" + "</td>" + document.getElementById("title").value + "</td>" + "</tr>" + "<tr>" + "<td>" + "<b>" + "Message : " + "</b>" + "</td" + "</td>" + document.getElementById("message").value + "</td>" + "</tr>" + "</table>"
+        }).then(
+          message => alert("Message sent successfully")
+        );
+        document.getElementById("fullName").value = ""
+        document.getElementById("email").value = ""
+        document.getElementById("contact").value = ""
+        document.getElementById("title").value = ""
+        document.getElementById("message").value = ""
+      }
+
+    </script>
+
 
     <!-- LOAD JQUERY LIBRARY -->
     <script src="assets/js/jquery.min.js"></script>
@@ -297,6 +277,7 @@
     <script>
       AOS.init();
     </script>
+
 </body>
 
 </html>
