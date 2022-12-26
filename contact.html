@@ -253,16 +253,22 @@
 
     <script>
       function sendEmail() {
-
+        var formKeys = { "fullName": "FullName", "email": "Email", "contact": "Contact Number", "title": "Title", "message": "Message" }
+        var template1 = '';
+        $.each(formKeys, function (key, value1) {
+          template1 = template1 + "<tr>" + "<td>" + "<b>" + value1 + ":" + " </b>" + "</td>" + document.getElementById(key).value + "</td>" + "</tr>"
+        })
+        var template = "<table >" + template1 + "</table>";
         Email.send({
-          SecureToken: "a7dab914-2da6-4d38-9f4d-6ec8379ccc1a",
-          To: "karmacharyakshitiz@gmail.com",
-          From: "fkeepers490@gmail.com",
+          SecureToken: "e1604e85-75ee-4e82-a201-aecef7605b34",
+          To: "amritacharya033@gmail.com",
+          From: "areteintlwebsite@gmail.com",
           Subject: "Contact Request",
-          Body: "<table >" + "<tr>" + "<td>" + "<b>" + "Full Name : " + "</b>" + "</td" + "</td>" + document.getElementById("fullName").value + "</td>" + "</tr>" + "<tr>" + "<td>" + "<b>" + "Email : " + "</b>" + "</td" + "</td>" + document.getElementById("email").value + "</td>" + "</tr>" + "<tr>" + "<td>" + "<b>" + "Contact : " + "</b>" + "</td" + "</td>" + document.getElementById("contact").value + "</td>" + "</tr>" + "<tr>" + "<td>" + "<b>" + "Title : " + "</b>" + "</td" + "</td>" + document.getElementById("title").value + "</td>" + "</tr>" + "<tr>" + "<td>" + "<b>" + "Message : " + "</b>" + "</td" + "</td>" + document.getElementById("message").value + "</td>" + "</tr>" + "</table>"
+          Body: template
         }).then(
-          message => alert("Message sent successfully")
+          message => alert(message)
         );
+        // console.log(JSON.parse(template1))
         document.getElementById("fullName").value = ""
         document.getElementById("email").value = ""
         document.getElementById("contact").value = ""
