@@ -73,6 +73,9 @@
                         <a class="nav-link" href="about.html">About Us</a>
                     </li>
                     <li>
+                        <a class="nav-link" href="csr.html">Corporate Social Responsibility</a>
+                    </li>
+                    <li>
                         <a class="nav-link" href="news.html">News & Events</a>
                     </li>
                     <li>
@@ -258,9 +261,6 @@
                 var template = "<table >" + template1 + "<tr>" + "<td>" + "<b>" + "Model" + ":" + " </b>" + "</td>" + document.querySelector("input[type='radio'][name=model_select]:checked").value + "</td>" + "</tr>" + "</table>";
                 Email.send({
                     SecureToken: "5ce14807-1dc9-4d25-a333-6488ef54d12b",
-                    // Host: "smtp.elasticemail.com",
-                    // Username: "areteintlwebsite@gmail.com",
-                    // Password: "5E8A846E3BC6EE51A33A8C37C4E17115846C",
                     To: "sales@areteintl.co",
                     From: "areteintlweb@gmail.com",
                     Subject: "Test Drive Request",
