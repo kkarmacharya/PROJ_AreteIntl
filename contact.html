@@ -260,13 +260,13 @@
         })
         var template = "<table >" + template1 + "</table>";
         Email.send({
-          SecureToken: "e1604e85-75ee-4e82-a201-aecef7605b34",
-          To: "amritacharya033@gmail.com",
-          From: "areteintlwebsite@gmail.com",
+          SecureToken: "5ce14807-1dc9-4d25-a333-6488ef54d12b",
+          To: "sales@areteintl.co",
+          From: "areteintlweb@gmail.com",
           Subject: "Contact Request",
           Body: template
         }).then(
-          message => alert(message)
+          message => alert("Message sent successfully")
         );
         // console.log(JSON.parse(template1))
         document.getElementById("fullName").value = ""

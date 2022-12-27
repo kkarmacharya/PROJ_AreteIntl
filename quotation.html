@@ -21,6 +21,8 @@
         href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i%7CRaleway:100,200,300,400,500,600,700,800,900%7CDroid+Serif:400,400italic,700"
         rel="stylesheet" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </head>
 
 <body>
@@ -111,7 +113,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-10 py-5">
-                            <form action="https://formspree.io/f/mlevjqle" method="POST">
+                            <form action="" method="POST">
                                 <div class="row">
 
 
@@ -131,31 +133,45 @@
                                     </fieldset>
 
                                 </div> -->
-                                <div class="col-md-6">
-                                    <label for="name"> Full Name </label>
-                                    <input type="text" name="Full Name" value="" size="40" class="form-control"
-                                        placeholder="Your full name here" required />
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="email"> Email </label>
-                                    <input type="email" name="Email" value="" size="40" class="form-control"
-                                        placeholder="Your email here" required />
-                                </div>
-                                <div class="col-md-6">
-                                    <label for=""> Contact Number</label>
-                                    <input type="text" name="Contact Number" value="" size="40" class="form-control"
-                                        placeholder="Your mobile number" required />
-                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label for="name"> Full Name </label>
+                                        <input type="text" id="fullName" name="Full Name" value="" size="40"
+                                            class="form-control" placeholder="Your full name here" required />
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="email"> Email </label>
+                                        <input type="email" id="email" name="Email" value="" size="40"
+                                            class="form-control" placeholder="Your email here" required />
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for=""> Contact Number</label>
+                                        <input type="text" id="contact" name="Contact Number" value="" size="40"
+                                            class="form-control" placeholder="Your mobile number" required />
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="">Select Model</label>
+                                        <div class="row">
+                                            <div class="col">
+                                                <input type="radio" id="model3" name="model_select" value="Model 3">
+                                                <label for="model3" class="mr-2">Model 3</label>
+                                                <input type="radio" id="modelx" name="model_select" value="Model X">
+                                                <label for="modelx" class="mr-2">Model X</label>
+                                                <input type="radio" id="modely" name="model_select" value="Model Y">
+                                                <label for="modely">Model Y</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label for="">Message</label>
 
+                                        <textarea name="Message" id="message" cols="40" rows="3" class="form-control"
+                                            placeholder="Enter message here"></textarea>
+                                    </div>
+                                    <div class="col-md-12 text-right">
+                                        <button type="button" onclick="sendEmail()">Submit</button>
+                                    </div>
 
-                                <div class="col-md-12">
-                                    <label for="">Message</label>
-
-                                    <textarea name="Message" cols="40" rows="3" class="form-control"
-                                        placeholder="Enter message here"></textarea>
-                                </div>
-                                <div class="col-md-12 text-right">
-                                    <button type="submit">Submit</button>
                                 </div>
                         </div>
                         </form>
@@ -238,6 +254,31 @@
                 x.style.display = "none";
             }
         }
+    </script>
+    <script>
+        function sendEmail() {
+            var formKeys = { "fullName": "FullName", "email": "Email", "contact": "Contact Number", "message": "Message" }
+            var template1 = '';
+            $.each(formKeys, function (key, value1) {
+                template1 = template1 + "<tr>" + "<td>" + "<b>" + value1 + ":" + " </b>" + "</td>" + document.getElementById(key).value + "</td>" + "</tr>"
+            })
+            var template = "<table >" + template1 + "<tr>" + "<td>" + "<b>" + "Model" + ":" + " </b>" + "</td>" + document.querySelector("input[type='radio'][name=model_select]:checked").value + "</td>" + "</tr>" + "</table>";
+            Email.send({
+                SecureToken: "5ce14807-1dc9-4d25-a333-6488ef54d12b",
+                To: "sales@areteintl.co",
+                From: "areteintlweb@gmail.com",
+                Subject: "Quotation Request",
+                Body: template
+            }).then(
+                message => alert("Message sent successfully")
+            );
+            // console.log(JSON.parse(template1))
+            document.getElementById("fullName").value = ""
+            document.getElementById("email").value = ""
+            document.getElementById("contact").value = ""
+            document.getElementById("message").value = ""
+        }
+
     </script>
 
     <!-- LOAD JQUERY LIBRARY -->
