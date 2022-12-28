@@ -73,10 +73,10 @@
                         <a class="nav-link" href="about.html">About Us</a>
                     </li>
                     <li>
-                        <a class="nav-link" href="csr.html">Corporate Social Responsibility</a>
+                        <a class="nav-link" href="news.html">News & Events</a>
                     </li>
                     <li>
-                        <a class="nav-link" href="news.html">News & Events</a>
+                        <a class="nav-link" href="csr.html">Corporate Social Responsibility</a>
                     </li>
                     <li>
                         <a class="nav-link" href="contact.html">Contact Us</a>
@@ -114,28 +114,45 @@
 
             <div class="section pt-0">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-lg-10 py-5">
-                            <form action="" method="POST">
-                                <div class="row">
 
+                    <div class="row">
+                        <div class="col-lg-12 py-5">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div id="carSelect" class="car-select mb-5">
+                                        <img id="model3-img"
+                                            src="https://www.tesla.com/cua/assets/apps/test-drive-ui/static/media/model3.a6e39461.jpg"
+                                            alt="">
+                                        <img id="modelX-img"
+                                            src="https://www.tesla.com/cua/assets/apps/test-drive-ui/static/media/modelx.1fa3121e.jpg"
+                                            alt="" style="display: none;">
+                                        <img id="modelY-img"
+                                            src="https://www.tesla.com/cua/assets/apps/test-drive-ui/static/media/modely.6bf3f4ce.jpg"
+                                            alt="" style="display: none;">
+                                        <div class="">
+                                            <a class="btn btn-rounded btn-border-dark mt-3"
+                                                id="model3-select"><span>Model
+                                                    3</span></a>
+                                            <a class="btn btn-rounded btn-border-dark mt-3"
+                                                id="modelX-select"><span>Model
+                                                    X</span></a>
+                                            <a class="btn btn-rounded btn-border-dark mt-3"
+                                                id="modelY-select"><span>Model
+                                                    Y</span></a>
+                                        </div>
+                                    </div>
 
                                 </div>
+                                <div class="col-md-12">
+                                    <input type="hidden" id="model" name="Model" value="" size="40" class="form-control"
+                                        placeholder="Model" />
+                                </div>
+                            </div>
+                            <form action="" method="POST">
+
                                 <h2 class="section-title fz-32 mb-3">
                                     <b>Contact Information</b>
                                 </h2>
-                                <!-- <div class="">
-                                    <label for=""> Color</label>
-                                    <fieldset id="group1" class="d-flexx">
-
-
-                                        <span>Red <input type="radio" value="red" name="red"></span>
-                                        <span> Black <input type="radio" value="black" name="black"></span>
-                                        <span>White <input type="radio" value="white" name="white"></span>
-
-                                    </fieldset>
-
-                                </div> -->
                                 <div class="row">
                                     <div class="col-md-6">
                                         <label for="name"> Full Name </label>
@@ -153,18 +170,21 @@
                                             class="form-control" placeholder="Your mobile number" required />
                                     </div>
                                     <div class="col-md-6">
-                                        <label for="">Select Model</label>
+                                        <label for="">Select Color</label>
                                         <div class="row">
                                             <div class="col">
-                                                <input type="radio" id="model3" name="model_select" value="Model 3">
-                                                <label for="model3" class="mr-2">Model 3</label>
-                                                <input type="radio" id="modelx" name="model_select" value="Model X">
-                                                <label for="modelx" class="mr-2">Model X</label>
-                                                <input type="radio" id="modely" name="model_select" value="Model Y">
-                                                <label for="modely">Model Y</label>
+                                                <input type="radio" id="red" name="color_select" value="Red">
+                                                <label for="red" class="mr-2">Red</label>
+                                                <input type="radio" id="blue" name="color_select" value="Blue">
+                                                <label for="blue" class="mr-2">Blue</label>
+                                                <input type="radio" id="white" name="color_select" value="White">
+                                                <label for="white" class="mr-2">White</label>
+                                                <input type="radio" id="black" name="color_select" value="Black">
+                                                <label for="black">Black</label>
                                             </div>
                                         </div>
                                     </div>
+
                                     <div class="col-md-12">
                                         <label for="">Message</label>
 
@@ -176,150 +196,155 @@
                                     </div>
 
                                 </div>
+                            </form>
                         </div>
-                        </form>
-                    </div>
-                    <div class="col-lg-2 contact-col pt-8">
-                        <div class="">
-                            <h4>Contact</h4>
-                            <span>Naxal -5, Kathmandu, Nepal</span> <br>
-                            <span> (+977) 14 512 799 </span> <br />
-                            <span> (+977) 980 116 6694 </span> <br>
-                            <span> (+977) 980 236 6688 </span>
-
-                        </div>
-                        <!-- <div class="">
-                  <h4>Customer Support</h4>
-                  <span> (+977) 98X XXX XXXX </span> <br />
-                  <span> (+977) 98X XXX XXXX </span>
-                </div>
-                <div class="">
-                  <h4>Spare Parts</h4>
-                  <span> (+977) 98X XXX XXXX </span> <br />
-                  <span> (+977) 98X XXX XXXX </span>
-                </div>
-                <div class="">
-                  <h4>Servicing</h4>
-                  <span> (+977) 98X XXX XXXX </span> <br />
-                  <span> (+977) 98X XXX XXXX </span>
-                </div>
-              </div> -->
                     </div>
                 </div>
             </div>
+
+            <footer class="footer pt-4 pb-4">
+                <div class="px-5">
+                    <div class="row footer-top">
+                        <div class="col-lg-3">
+                            <div class="text-center-sm">
+                                <div class="social-icons">
+                                    <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                                    <a href="https://www.instagram.com/tesla.nepal/?hl=en" target="_blank"><i
+                                            class="fa fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-9">
+                            <div class="footer-links text-right text-center-sm">
+                                <div class="white">
+                                    <a href="contact.html">Contact</a>
+                                    <a href="about.html">About</a>
+
+                                    <a href="">Terms & Conditions</a>
+                                    <a href="">Privacy Policy</a>
+                                    <a href="">FAQs</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="power text-center">
+                                © Arete International (Pvt) Ltd. 2022 All Rights Reserved.
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </footer>
         </div>
 
-        <footer class="footer pt-4 pb-4">
-            <div class="px-5">
-                <div class="row footer-top">
-                    <div class="col-lg-3">
-                        <div class="text-center-sm">
-                            <div class="social-icons">
-                                <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
-                                <a href="https://www.instagram.com/tesla.nepal/?hl=en" target="_blank"><i
-                                        class="fa fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-9">
-                        <div class="footer-links text-right text-center-sm">
-                            <div class="white">
-                                <a href="contact.html">Contact</a>
-                                <a href="about.html">About</a>
-
-                                <a href="">Terms & Conditions</a>
-                                <a href="">Privacy Policy</a>
-                                <a href="">FAQs</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="power text-center">
-                            © Arete International (Pvt) Ltd. 2022 All Rights Reserved.
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-        </footer>
-    </div>
-
-    <a id="backtotop" class="fa fa-angle-up circle" href="javascript:void(0)"></a>
-    <script>
-        function showAndHide(e) {
-            var x = document.getElementById(e);
-            if (x.style.display == "none") {
-                x.style.display = "block";
-            } else {
-                x.style.display = "none";
+        <a id="backtotop" class="fa fa-angle-up circle" href="javascript:void(0)"></a>
+        <script>
+            function showAndHide(e) {
+                var x = document.getElementById(e);
+                if (x.style.display == "none") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
             }
-        }
-    </script>
-    <script>
-        function sendEmail() {
-            var formKeys = { "fullName": "FullName", "email": "Email", "contact": "Contact Number", "message": "Message" }
-            var template1 = '';
-            $.each(formKeys, function (key, value1) {
-                template1 = template1 + "<tr>" + "<td>" + "<b>" + value1 + ":" + " </b>" + "</td>" + document.getElementById(key).value + "</td>" + "</tr>"
-            })
-            var template = "<table >" + template1 + "<tr>" + "<td>" + "<b>" + "Model" + ":" + " </b>" + "</td>" + document.querySelector("input[type='radio'][name=model_select]:checked").value + "</td>" + "</tr>" + "</table>";
-            Email.send({
-                SecureToken: "5ce14807-1dc9-4d25-a333-6488ef54d12b",
-                To: "sales@areteintl.co",
-                From: "areteintlweb@gmail.com",
-                Subject: "Quotation Request",
-                Body: template
-            }).then(
-                message => alert("Message sent successfully")
-            );
-            // console.log(JSON.parse(template1))
-            document.getElementById("fullName").value = ""
-            document.getElementById("email").value = ""
-            document.getElementById("contact").value = ""
-            document.getElementById("message").value = ""
-        }
+        </script>
+        <script>
+            function sendEmail() {
+                var formKeys = { "fullName": "FullName", "email": "Email", "contact": "Contact Number", "model": "Model", "message": "Message" }
+                var template1 = '';
+                $.each(formKeys, function (key, value1) {
+                    template1 = template1 + "<tr>" + "<td>" + "<b>" + value1 + ":" + " </b>" + "</td>" + document.getElementById(key).value + "</td>" + "</tr>"
+                })
+                var template = "<table >" + template1 + "<tr>" + "<td>" + "<b>" + "Color" + ":" + " </b>" + "</td>" + document.querySelector("input[type='radio'][name=color_select]:checked").value + "</td>" + "</tr>" + "</table>";
+                Email.send({
+                    SecureToken: "5ce14807-1dc9-4d25-a333-6488ef54d12b",
+                    To: "sales@areteintl.co",
+                    From: "areteintlweb@gmail.com",
+                    Subject: "Quotation Request",
+                    Body: template
+                }).then(
+                    message => alert("Message sent successfully")
+                );
+                // console.log(JSON.parse(template1))
+                document.querySelector('input[name="color_select"]:checked').checked = false;
+                document.getElementById("fullName").value = ""
+                document.getElementById("email").value = ""
+                document.getElementById("contact").value = ""
+                document.getElementById("message").value = ""
+            }
 
-    </script>
+        </script>
+        <script>
+            document.getElementById("model3-select").addEventListener("click", function () {
+                document.getElementById("model3-select").classList.add("selectedButton");
+                document.getElementById("modelX-select").classList.remove("selectedButton");
+                document.getElementById("modelY-select").classList.remove("selectedButton");
 
-    <!-- LOAD JQUERY LIBRARY -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery-migrate.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/modernizr-2.7.1.min.js"></script>
-    <script src="assets/js/jquery.sidr.min.js"></script>
-    <script src="assets/js/jquery.countTo.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <script src="assets/js/jquery.prettyPhoto.js"></script>
-    <script src="assets/js/headroom.min.js"></script>
-    <script src="assets/js/jQuery.headroom.js"></script>
-    <script src="assets/js/waypoints.min.js"></script>
-    <script src="assets/js/script.js"></script>
+                document.getElementById('model3-img').style.display = 'block';
+                document.getElementById('modelX-img').style.display = 'none';
+                document.getElementById('modelY-img').style.display = 'none';
+                document.getElementById('model').value = 'Model 3';
 
-    <script src="assets/js/jquery.themepunch.tools.min.js"></script>
-    <script src="assets/js/jquery.themepunch.revolution.min.js"></script>
-    <script src="assets/js/extensions/revolution.extension.video.min.js"></script>
-    <script src="assets/js/extensions/revolution.extension.slideanims.min.js"></script>
-    <script src="assets/js/extensions/revolution.extension.actions.min.js"></script>
-    <script src="assets/js/extensions/revolution.extension.layeranimation.min.js"></script>
-    <script src="assets/js/extensions/revolution.extension.kenburn.min.js"></script>
-    <script src="assets/js/extensions/revolution.extension.navigation.min.js"></script>
-    <script src="assets/js/extensions/revolution.extension.migration.min.js"></script>
-    <script src="assets/js/extensions/revolution.extension.parallax.min.js"></script>
+            }, false);
+            document.getElementById("modelX-select").addEventListener("click", function () {
+                document.getElementById("model3-select").classList.remove("selectedButton");
+                document.getElementById("modelX-select").classList.add("selectedButton");
+                document.getElementById("modelY-select").classList.remove("selectedButton");
+                document.getElementById('model3-img').style.display = 'none';
+                document.getElementById('modelX-img').style.display = 'block';
+                document.getElementById('modelY-img').style.display = 'none';
+                document.getElementById('model').value = 'Model X';
+            }, false);
+            document.getElementById("modelY-select").addEventListener("click", function () {
+                document.getElementById("model3-select").classList.remove("selectedButton");
+                document.getElementById("modelX-select").classList.remove("selectedButton");
+                document.getElementById("modelY-select").classList.add("selectedButton");
+                document.getElementById('model3-img').style.display = 'none';
+                document.getElementById('modelX-img').style.display = 'none';
+                document.getElementById('modelY-img').style.display = 'block';
+                document.getElementById('model').value = 'Model Y';
+            }, false);
+        </script>
 
-    <script src="assets/js/popper.min.js"></script>
-    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
-    <script src="assets/js/jquery.validate.min.js"></script>
-    <script src="assets/js/jquery.pagepiling.min.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <script src="assets/js/interface.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+        <!-- LOAD JQUERY LIBRARY -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery-migrate.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/modernizr-2.7.1.min.js"></script>
+        <script src="assets/js/jquery.sidr.min.js"></script>
+        <script src="assets/js/jquery.countTo.js"></script>
+        <script src="assets/js/owl.carousel.min.js"></script>
+        <script src="assets/js/jquery.prettyPhoto.js"></script>
+        <script src="assets/js/headroom.min.js"></script>
+        <script src="assets/js/jQuery.headroom.js"></script>
+        <script src="assets/js/waypoints.min.js"></script>
+        <script src="assets/js/script.js"></script>
+
+        <script src="assets/js/jquery.themepunch.tools.min.js"></script>
+        <script src="assets/js/jquery.themepunch.revolution.min.js"></script>
+        <script src="assets/js/extensions/revolution.extension.video.min.js"></script>
+        <script src="assets/js/extensions/revolution.extension.slideanims.min.js"></script>
+        <script src="assets/js/extensions/revolution.extension.actions.min.js"></script>
+        <script src="assets/js/extensions/revolution.extension.layeranimation.min.js"></script>
+        <script src="assets/js/extensions/revolution.extension.kenburn.min.js"></script>
+        <script src="assets/js/extensions/revolution.extension.navigation.min.js"></script>
+        <script src="assets/js/extensions/revolution.extension.migration.min.js"></script>
+        <script src="assets/js/extensions/revolution.extension.parallax.min.js"></script>
+
+        <script src="assets/js/popper.min.js"></script>
+        <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <script src="assets/js/jquery.validate.min.js"></script>
+        <script src="assets/js/jquery.pagepiling.min.js"></script>
+        <script src="assets/js/owl.carousel.min.js"></script>
+        <script src="assets/js/interface.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
 </body>
 
 </html>

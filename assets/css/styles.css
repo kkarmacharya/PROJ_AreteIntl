@@ -27,6 +27,7 @@ textarea {
   font-size: 12px;
   border: transparent;
 }
+
 select {
   /* border: 1px solid; */
   padding: 10px 5px;
@@ -41,6 +42,21 @@ select {
 input[type="checkbox"],
 input[type="radio"] {
   width: auto;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+input[type="radio"]:checked:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #d0343e;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 1px solid #888;
 }
 hr.dashed,
 hr.dotted {
@@ -129,6 +145,23 @@ hr.dotted {
   background-color: #222;
   color: #fff !important;
 }
+.btn.btn-border-dark {
+  border: 2px solid #222;
+  color: #222;
+  outline: 2px transparent;
+  margin-right: 15px;
+}
+.btn.btn-border-dark.selectedButton {
+  /* outline: 2px solid red; */
+  border: 2px solid #d0343e;
+  /* box-shadow: tomato; */
+}
+.btn.btn-border-dark:hover {
+  border: 2px solid #d0343e;
+}
+/* .btn.btn-border-dark:after {
+  content: "";
+} */
 .home-page .btn.btn-bg-dark {
   background-color: rgba(100, 100, 100, 0.8);
   box-shadow: 32px 32px 100px rgb(51 177 223 / 5%);
@@ -4507,6 +4540,24 @@ table.shop-cart tbody tr td.actions input {
   opacity: 0.5;
   filter: alpha(opacity=50);
 }
+.car-select {
+  /* height: 600px; */
+  width: 100%;
+}
+.car-select img {
+  width: 100%;
+}
+.model3-select {
+  background: url("https://www.tesla.com/cua/assets/apps/test-drive-ui/static/media/model3.a6e39461.jpg")
+    no-repeat fixed center;
+}
+.modelX-select {
+  background: url("https://www.tesla.com/cua/assets/apps/test-drive-ui/static/media/modelx.1fa3121e.jpg");
+}
+.modelY-select {
+  background: url("https://www.tesla.com/cua/assets/apps/test-drive-ui/static/media/modely.6bf3f4ce.jpg");
+}
+
 @media (min-width: 480px) {
   .payment-product-list .product-item .product-img {
     padding-right: 30px;
