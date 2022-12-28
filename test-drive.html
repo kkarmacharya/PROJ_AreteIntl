@@ -116,19 +116,24 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-10 py-5">
-                            <form action="" method="POST">
-                                <div class="row">
-                                    <div class="col-lg-12 col-12 pt-5 pb-5">
-                                        <h2 class="section-title fz-32 mb-3">
-                                            <b>Request For Test Drive </b>
-                                        </h2>
+                            <form method="POST" id="testDrive">
 
-                                    </div>
+                                <h2 class="section-title fz-32 mb-3">
+                                    <b>Contact Information</b>
+                                </h2>
+                                <div class="alert alert-success" id="success-alert" role="alert">
+                                    <strong>Success!</strong> Your Test drive request has been submitted.
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="alert alert-danger" id="error-alert" role="alert">
+                                    <strong>Oops!</strong> Fill up the required fields
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
 
                                 </div>
-                                <!-- <h2 class="section-title fz-32 mb-3">
-                                    <b>Contact Information</b>
-                                </h2> -->
                                 <div class="row">
                                     <div class="col-md-6">
                                         <label for="name"> Full Name </label>
@@ -163,7 +168,7 @@
                                         <label for="">Message</label>
 
                                         <textarea name="Message" id="message" cols="40" rows="3" class="form-control"
-                                            placeholder="Enter message here"></textarea>
+                                            placeholder="Enter message here" required></textarea>
                                     </div>
                                     <div class="col-md-12 text-right">
                                         <button type="button" onclick="sendEmail()">Submit</button>
@@ -180,22 +185,7 @@
                                 <span> (+977) 980 236 6688 </span>
 
                             </div>
-                            <!-- <div class="">
-                  <h4>Customer Support</h4>
-                  <span> (+977) 98X XXX XXXX </span> <br />
-                  <span> (+977) 98X XXX XXXX </span>
-                </div>
-                <div class="">
-                  <h4>Spare Parts</h4>
-                  <span> (+977) 98X XXX XXXX </span> <br />
-                  <span> (+977) 98X XXX XXXX </span>
-                </div>
-                <div class="">
-                  <h4>Servicing</h4>
-                  <span> (+977) 98X XXX XXXX </span> <br />
-                  <span> (+977) 98X XXX XXXX </span>
-                </div>
-              </div> -->
+
                         </div>
                     </div>
                 </div>
@@ -241,6 +231,14 @@
 
         <a id="backtotop" class="fa fa-angle-up circle" href="javascript:void(0)"></a>
         <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                $("#error-alert").hide();
+                $("#success-alert").hide();
+            });
+
+        </script>
+        <script>
+
             function showAndHide(e) {
                 var x = document.getElementById(e);
                 if (x.style.display == "none") {
@@ -253,26 +251,39 @@
 
         <script>
             function sendEmail() {
-                var formKeys = { "fullName": "FullName", "email": "Email", "contact": "Contact Number", "message": "Message" }
-                var template1 = '';
-                $.each(formKeys, function (key, value1) {
-                    template1 = template1 + "<tr>" + "<td>" + "<b>" + value1 + ":" + " </b>" + "</td>" + document.getElementById(key).value + "</td>" + "</tr>"
-                })
-                var template = "<table >" + template1 + "<tr>" + "<td>" + "<b>" + "Model" + ":" + " </b>" + "</td>" + document.querySelector("input[type='radio'][name=model_select]:checked").value + "</td>" + "</tr>" + "</table>";
-                Email.send({
-                    SecureToken: "5ce14807-1dc9-4d25-a333-6488ef54d12b",
-                    To: "sales@areteintl.co",
-                    From: "areteintlweb@gmail.com",
-                    Subject: "Test Drive Request",
-                    Body: template
-                }).then(
-                    message => alert(message)
-                );
-                // console.log(JSON.parse(template1))
-                document.getElementById("fullName").value = ""
-                document.getElementById("email").value = ""
-                document.getElementById("contact").value = ""
-                document.getElementById("message").value = ""
+                // document.forms["testDrive"].submit();
+                if ($('#testDrive').is(':invalid') != 0) {
+                    $("#error-alert").fadeTo(2000, 500).slideUp(500, function () {
+                        $("#error-alert").slideUp(500);
+                    });
+                    return false;
+                } else {
+                    var formKeys = { "fullName": "FullName", "email": "Email", "contact": "Contact Number" }
+                    var template1 = '';
+                    $.each(formKeys, function (key, value1) {
+                        template1 = template1 + "<tr>" + "<td>" + "<b>" + value1 + ":" + " </b>" + "</td>" + document.getElementById(key).value + "</td>" + "</tr>"
+                    })
+                    var template = "<table >" + template1 + "<tr>" + "<td>" + "<b>" + "Model" + ":" + " </b>" + "</td>" + document.querySelector("input[type='radio'][name=model_select]:checked").value + "</td>" + "</tr>" + "<tr>" + "<td>" + "<b>" + "Message" + ":" + " </b>" + "</td>" + document.getElementById('message').value + "</td>" + "</tr>" + "</table>";
+                    Email.send({
+                        SecureToken: "5ce14807-1dc9-4d25-a333-6488ef54d12b",
+                        To: "sales@areteintl.co",
+                        From: "areteintlweb@gmail.com",
+                        Subject: "Test Drive Request",
+                        Body: template
+                    }).then(
+                        message => {
+                            $("#success-alert").fadeTo(2000, 500).slideUp(500, function () {
+                                $("#success-alert").slideUp(500);
+                            });
+                        }
+                    );
+                    // console.log(JSON.parse(template1))
+                    document.querySelector('input[name="model_select"]:checked').checked = false;
+                    document.getElementById("fullName").value = ""
+                    document.getElementById("email").value = ""
+                    document.getElementById("contact").value = ""
+                    document.getElementById("message").value = ""
+                }
             }
 
         </script>
