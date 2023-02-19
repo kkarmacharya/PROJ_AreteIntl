@@ -22,6 +22,13 @@
     rel="stylesheet" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
+<style>
+  @media screen and (max-width:576px) {
+    .model-video-section {
+      display: none;
+    }
+  }
+</style>
 
 <body>
   <div class="site">
@@ -96,9 +103,20 @@
     <div id="main" class="main">
       <section class="main-banner">
         <div class="banner">
-          <img
+          <section class="model-video-section">
+            <div class="">
+              <video preload="auto" loop autoplay muted playsinline>
+                <source src="assets/img/modely/hillside.mp4" type="video/mp4" />
+                <!-- <source
+                                    src="assets/video/video1.webm"
+                                    type="video/webm"
+                                  /> -->
+              </video>
+            </div>
+          </section>
+          <!-- <img
             src="https://tesla-cdn.thron.com/delivery/public/image/tesla/91abd4c7-32a1-41cc-ade5-b64774dbea61/bvlatuR/std/2880x1800/Model-Y-Main-Hero-Desktop-Global?quality=auto-medium&amp;format=auto"
-            alt="Model-3" class="desktop-img" />
+            alt="Model-3" class="desktop-img" /> -->
           <img
             src="https://tesla-cdn.thron.com/delivery/public/image/tesla/5492582b-3d91-4c09-8fab-b55d36e8390a/bvlatuR/std/800x1732/Model-Y-Main-Hero-Mobile-Global?quality=auto-medium&amp;format=auto"
             alt="" class="mobile-img" />
@@ -327,12 +345,8 @@
       <section class="main-banner built-for-safety" data-aos="fade-down" data-aos-easing="linear"
         data-aos-duration="1000">
         <div class="banner-2">
-          <img
-            src="https://tesla-cdn.thron.com/delivery/public/image/tesla/48b20b9d-9322-4cf9-b079-44797fc32600/bvlatuR/std/0x0/AWD_hero@2"
-            alt="Model-S" class="desktop-img" />
-          <img
-            src="https://tesla-cdn.thron.com/delivery/public/image/tesla/587709ca-68cb-4deb-9277-fa0bddf8dee3/bvlatuR/std/0x0/AWD_hero-mobile@2"
-            alt="" class="mobile-img" />
+          <img src="assets/img/modely/red.jpg" alt="Model-S" class="desktop-img" />
+          <img src="assets/img/modely/red.jpg" alt="" class="mobile-img" />
           <div class="container">
             <div class="row justify-content-center banner-badges m-0">
               <div class="col-6 col-lg-4" data-aos="fade-right">
@@ -385,7 +399,7 @@
               <section class="model-video-section">
                 <div class="">
                   <video preload="auto" loop autoplay muted playsinline>
-                    <source src="assets/video/WVNSU3_Range_Desktop.mp4-2000_WJLESL.mp4" type="video/mp4" />
+                    <source src="assets/img/modely/offroad.mp4" type="video/mp4" />
                     <!-- <source
                         src="assets/video/video1.webm"
                         type="video/webm"
