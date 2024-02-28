@@ -114,7 +114,7 @@ function GoogleMap() {
       icon: o,
     });
   }
-  var o = "../images/map-marker.png";
+  var o = "../img/map-marker.png";
   $("#map").length > 0 &&
     (void 0 != $("#map").attr("data-marker-image") &&
       (o = $("#map").attr("data-marker-image")),

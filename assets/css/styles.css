@@ -214,7 +214,7 @@ hr.dotted {
   display: inline-block;
   margin-left: -35px;
   padding-right: 5px;
-  content: url(../images/arrow.svg);
+  content: url(../img/arrow.svg);
   vertical-align: middle;
   opacity: 0;
 }
@@ -726,7 +726,7 @@ textarea.form-control {
   width: 1920px;
   height: 1080px;
   padding-bottom: 56.25%;
-  background-image: url(../images/background/bg_7.jpg);
+  background-image: url(../img/background/bg_7.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1694,38 +1694,38 @@ table th {
   background-image: url(../img/charlie-deets-AkgALppFIwo-unsplash.jpg);
 }
 .section-bg-2 {
-  background-image: url(../images/background/bg_2.jpg);
+  background-image: url(../img/background/bg_2.jpg);
 }
 .section-interior-bg {
   background-image: url(../img/Model-3-Interior.jpeg);
 }
 .section-bg-3 {
-  background-image: url(../images/background/bg_3.jpg);
+  background-image: url(../img/background/bg_3.jpg);
 }
 .section-bg-4 {
-  background-image: url(../images/background/bg_4.svg);
+  background-image: url(../img/background/bg_4.svg);
 }
 .section-bg-5 {
-  background-image: url(../images/background/bg_5.jpg);
+  background-image: url(../img/background/bg_5.jpg);
   background-position: center;
 }
 .section-bg-6 {
-  background-image: url(../images/background/bg_6.jpg);
+  background-image: url(../img/background/bg_6.jpg);
 }
 .section-bg-7 {
-  background-image: url(../images/background/bg_7.jpg);
+  background-image: url(../img/background/bg_7.jpg);
 }
 .section-bg-8 {
-  background-image: url(../images/background/bg_8.jpg);
+  background-image: url(../img/background/bg_8.jpg);
 }
 .section-bg-9 {
-  background-image: url(../images/background/bg_9.jpg);
+  background-image: url(../img/background/bg_9.jpg);
 }
 .section-bg-10 {
-  background-image: url(../images/background/bg_12.jpg);
+  background-image: url(../img/background/bg_12.jpg);
 }
 .section-bg-11 {
-  background-image: url(../images/background/bg_13.jpg);
+  background-image: url(../img/background/bg_13.jpg);
   background-position: 320px top;
   background-repeat: no-repeat;
 }
@@ -1736,13 +1736,13 @@ table th {
   background-repeat: no-repeat;
 }
 .section-bg-12 {
-  background-image: url(../images/background/bg_14.jpg);
+  background-image: url(../img/background/bg_14.jpg);
 }
 .section-bg-13 {
-  background-image: url(../images/background/bg_15.jpg);
+  background-image: url(../img/background/bg_15.jpg);
 }
 .section-bg-14 {
-  background-image: url(../images/background/bg_16.jpg);
+  background-image: url(../img/background/bg_16.jpg);
 }
 .section-bg-15,
 .section-bg-16,
@@ -1750,15 +1750,15 @@ table th {
   background-position: 0 0;
 }
 .section-bg-15 {
-  background-image: url(../images/background/bg_17.svg);
+  background-image: url(../img/background/bg_17.svg);
   background-repeat: no-repeat;
 }
 .section-bg-16 {
-  background-image: url(../images/background/bg_18.jpg);
+  background-image: url(../img/background/bg_18.jpg);
   background-repeat: no-repeat;
 }
 .section-bg-17 {
-  background-image: url(../images/background/bg_19.jpg);
+  background-image: url(../img/background/bg_19.jpg);
   background-repeat: no-repeat;
 }
 .section-bg-18,
@@ -1777,48 +1777,48 @@ table th {
   background-repeat: no-repeat;
 }
 .section-bg-18 {
-  background-image: url(../images/background/bg_20.jpg);
+  background-image: url(../img/background/bg_20.jpg);
 }
 .section-bg-19 {
-  background-image: url(../images/background/bg_21.jpg);
+  background-image: url(../img/background/bg_21.jpg);
 }
 .section-bg-20 {
-  background-image: url(../images/background/bg_22.jpg);
+  background-image: url(../img/background/bg_22.jpg);
 }
 .section-bg-21 {
-  background-image: url(../images/background/bg_23.jpg);
+  background-image: url(../img/background/bg_23.jpg);
 }
 .section-bg-22 {
-  background-image: url(../images/background/bg_24.jpg);
+  background-image: url(../img/background/bg_24.jpg);
 }
 .section-bg-23 {
-  background-image: url(../images/background/bg_25.jpg);
+  background-image: url(../img/background/bg_25.jpg);
 }
 .section-bg-24 {
-  background-image: url(../images/background/bg_26.jpg);
+  background-image: url(../img/background/bg_26.jpg);
   background-position: center;
   background-repeat: no-repeat;
 }
 .section-bg-25 {
-  background-image: url(../images/background/bg_27.jpg);
+  background-image: url(../img/background/bg_27.jpg);
 }
 .section-bg-26 {
-  background-image: url(../images/background/bg_28.jpg);
+  background-image: url(../img/background/bg_28.jpg);
 }
 .section-bg-27 {
-  background-image: url(../images/background/bg_29.jpg);
+  background-image: url(../img/background/bg_29.jpg);
 }
 .section-bg-28 {
-  background-image: url(../images/background/bg_30.jpg);
+  background-image: url(../img/background/bg_30.jpg);
 }
 .section-bg-29 {
-  background-image: url(../images/background/bg_31.jpg);
+  background-image: url(../img/background/bg_31.jpg);
 }
 .section-bg-30 {
-  background-image: url(../images/background/bg_32.jpg);
+  background-image: url(../img/background/bg_32.jpg);
 }
 .section-bg-31 {
-  background-image: url(../images/background/bg_33.jpg);
+  background-image: url(../img/background/bg_33.jpg);
   background-position: center top;
   background-repeat: no-repeat;
 }
@@ -1849,10 +1849,10 @@ table th {
   background-repeat: no-repeat;
 }
 .section-bg-32 {
-  background-image: url(../images/background/bg_34.jpg);
+  background-image: url(../img/background/bg_34.jpg);
 }
 .section-bg-33 {
-  background-image: url(../images/background/bg_35.jpg);
+  background-image: url(../img/background/bg_35.jpg);
 }
 .section-bg-34 {
   background-image: url("../img/model3/pristine.jpg");
@@ -1864,72 +1864,72 @@ table th {
   background-image: url(../img/modely/modely-large.jpg);
 }
 .section-bg-37 {
-  background-image: url(../images/background/bg_39.jpg);
+  background-image: url(../img/background/bg_39.jpg);
 }
 .section-bg-38 {
-  background-image: url(../images/background/bg_40.jpg);
+  background-image: url(../img/background/bg_40.jpg);
 }
 .section-bg-39 {
-  background-image: url(../images/background/bg_41.jpg);
+  background-image: url(../img/background/bg_41.jpg);
 }
 .section-bg-40 {
-  background-image: url(../images/background/bg_42.jpg);
+  background-image: url(../img/background/bg_42.jpg);
 }
 .section-bg-41 {
-  background-image: url(../images/background/bg_43.jpg);
+  background-image: url(../img/background/bg_43.jpg);
 }
 .section-bg-42 {
-  background-image: url(../images/background/bg_44.jpg);
+  background-image: url(../img/background/bg_44.jpg);
 }
 .section-bg-43 {
-  background-image: url(../images/background/bg_45.jpg);
+  background-image: url(../img/background/bg_45.jpg);
   background-position: center;
   background-repeat: no-repeat;
 }
 .section-bg-44 {
-  background-image: url(../images/background/bg_46.jpg);
+  background-image: url(../img/background/bg_46.jpg);
 }
 .section-bg-45 {
-  background-image: url(../images/background/bg_47.jpg);
+  background-image: url(../img/background/bg_47.jpg);
 }
 .section-bg-46 {
-  background-image: url(../images/background/bg_48.jpg);
+  background-image: url(../img/background/bg_48.jpg);
 }
 .section-bg-47 {
-  background-image: url(../images/background/bg_49.jpg);
+  background-image: url(../img/background/bg_49.jpg);
 }
 .section-bg-48 {
-  background-image: url(../images/background/bg_50.jpg);
+  background-image: url(../img/background/bg_50.jpg);
 }
 .section-bg-49 {
-  background-image: url(../images/background/bg_51.jpg);
+  background-image: url(../img/background/bg_51.jpg);
 }
 .section-bg-50 {
-  background-image: url(../images/background/bg_52.jpg);
+  background-image: url(../img/background/bg_52.jpg);
 }
 .section-bg-51 {
-  background-image: url(../images/background/bg_53.jpg);
+  background-image: url(../img/background/bg_53.jpg);
 }
 .section-bg-52 {
-  background-image: url(../images/background/bg_54.jpg);
+  background-image: url(../img/background/bg_54.jpg);
 }
 .section-bg-53 {
-  background-image: url(../images/background/bg_55.jpg);
+  background-image: url(../img/background/bg_55.jpg);
 }
 .section-bg-54 {
   background-image: url(../img/about.jpg);
 }
 .section-bg-55 {
-  background-image: url(../images/background/bg_57.jpg);
+  background-image: url(../img/background/bg_57.jpg);
 }
 .section-bg-56 {
-  background-image: url(../images/background/bg_58.jpg);
+  background-image: url(../img/background/bg_58.jpg);
   background-position: center bottom;
   background-repeat: no-repeat;
 }
 @media screen and (max-width: 576px) {
   .section-bg-34 {
-    background-image: url("../img/model3/image1mobile.png");
+    background-image: url("../img/model3/pristine.jpg");
   }
   .section-bg-35 {
     background-image: url("../img/ModelX/ModelX-small.jpg");
@@ -1939,12 +1939,12 @@ table th {
   }
 }
 .section-coming-soon {
-  background-image: url(../images/background/bg_coming_soon.jpg);
+  background-image: url(../img/background/bg_coming_soon.jpg);
   background-position: top center;
   background-repeat: no-repeat;
 }
 .section-maintenance {
-  background-image: url(../images/background/bg_maintenance.jpg);
+  background-image: url(../img/background/bg_maintenance.jpg);
   background-position: center;
 }
 .section-coming-soon .section-title {
@@ -2103,7 +2103,7 @@ table th {
 .feature-item.style-3 {
   padding-top: 10px;
   padding-bottom: 10px;
-  background-image: url(../images/feature/feature_1.jpg);
+  background-image: url(../img/feature/feature_1.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
